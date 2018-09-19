@@ -1,0 +1,657 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"alig",
+				"align-content"
+			],
+			[
+				"ma",
+				"marker-mid"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"align",
+				"align-self"
+			],
+			[
+				"inli",
+				"inline-flex"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"hide",
+				"hidePreview"
+			],
+			[
+				"transEndEv",
+				"transEndEventNames"
+			],
+			[
+				"large",
+				"large-12"
+			],
+			[
+				"root",
+				"gupnp_root_device_new"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/html/passive/coursera/assignments/assignment2/index.html",
+			"settings":
+			{
+				"buffer_size": 1228,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alexare/Documents/andrew/document/html/magicfm-server-invoice.html",
+			"settings":
+			{
+				"buffer_size": 14877,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/var/www/html/io.perch/index.html",
+			"settings":
+			{
+				"buffer_size": 15977,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/passive/coursera/assignments/assignment2/style.css",
+			"settings":
+			{
+				"buffer_size": 3598,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/passive/coursera/examples/Lecture24/responsive-after.html",
+			"settings":
+			{
+				"buffer_size": 2446,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: If Condition"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"file",
+			"ls",
+			"console.log(\"heaven\");"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/html/passive/coursera",
+		"/var/www/html/passive/coursera/assignments",
+		"/var/www/html/passive/coursera/assignments/assignment2"
+	],
+	"file_history":
+	[
+		"/home/alexare/puppet/charitybank.org/index.html",
+		"/var/www/html/ms-projects/bootstrap-3.3.7/dist/css/bootstrap.css",
+		"/var/www/html/passive/coursera/examples/Lecture24/responsive-after.html",
+		"/var/www/html/passive/coursera/examples/Lecture23/media-queries-before.html",
+		"/home/alexare/clone/espresso-portal/guest/s/default/html/se.html",
+		"/var/www/html/passive/traversy_dom/dom.js",
+		"/var/www/html/passive/coursera/examples/Lecture22/positioning-before.html",
+		"/var/www/html/passive/coursera/examples/Lecture22/positioning-after.html",
+		"/var/www/html/passive/coursera/examples/Lecture21/floating-after.html",
+		"/var/www/html/passive/coursera/examples/Lecture21/floating-before.html",
+		"/var/www/html/passive/coursera/examples/Lecture20/background-after.html",
+		"/var/www/html/passive/coursera/examples/Lecture20/background-before.html",
+		"/var/www/html/passive/coursera/README.md",
+		"/var/www/html/passive/coursera/examples/Lecture12/css-syntax.html",
+		"/var/www/html/passive/coursera/assignments/assignment1/Assignment-1.md",
+		"/var/www/html/codrops/thumb_preview/component.js",
+		"/var/www/html/codrops/thumb_preview/component.css",
+		"/var/www/html/codrops/thumb_preview/index.html",
+		"/var/www/html/codrops/thumb_preview/jquery.min.js",
+		"/var/www/html/ve/member/index.php",
+		"/var/www/html/ve/member/transaction.php",
+		"/home/alexare/Documents/vintage-earners/countdown/assets/website/css/main.css",
+		"/home/alexare/Documents/vintage-earners/countdown/index.html",
+		"/home/alexare/puppet/hosting_brandio.io/envato/hostify/html/css/font-awesome.min.css",
+		"/home/alexare/Documents/anita/blog-08-12-2017.xml",
+		"/home/alexare/Documents/anita/old_xml.backup.anita.xml",
+		"/home/alexare/Documents/anita/theme-4930737618677924404.xml",
+		"/home/alexare/Documents/anita/currecnt_persona_theme-4930737618677924404(1).xml",
+		"/home/alexare/www.workstationng.com/index.html",
+		"/home/alexare/Documents/anita/persona/persona.xml",
+		"/home/alexare/sig.html",
+		"/var/www/html/idcoffice/.htaccess",
+		"/var/www/html/idcoffice/includes/db_connect.php",
+		"/var/www/html/idcoffice/core/class.user.php",
+		"/var/www/html/idcoffice/user/includes/header.php",
+		"/var/www/html/idcoffice/user/.htaccess",
+		"/var/www/html/idcoffice/administrator/.htaccess",
+		"/var/www/html/idcoffice/user/dashboard.php",
+		"/var/www/html/idcoffice/emailTemplates/reset.php",
+		"/var/www/html/idcoffice/includes/header.php",
+		"/var/www/html/idcoffice/index.php",
+		"/var/www/html/idcoffice/user/includes/write-testimony.php",
+		"/var/www/html/idcoffice/includes/config.php",
+		"/var/www/html/fbcapital/wp-config.php",
+		"/media/alexare/9E7E-77541/FBC/web/multisite_db/admin_fbc.sql",
+		"/home/alexare/.cache/.fr-CgsTJg/admin_fbc.sql",
+		"/var/www/html/fbcapital/wp-content/themes/biko/css/responsive.css",
+		"/var/www/html/onemic/index-alt17-shake-text.html",
+		"/var/www/html/onemic/index-alt6-text-slide.html",
+		"/var/www/html/onemic/fonts/poppins/stylesheet.css",
+		"/var/www/html/onemic/index-alt2-creative-slide.html",
+		"/var/www/html/onemic/index-alt24-fullwidth-sidebar-nav.html",
+		"/var/www/html/onemic/signup.html",
+		"/var/www/html/onemic/contact.html",
+		"/var/www/html/onemic/about-alt1.html",
+		"/var/www/html/onemic/about.html",
+		"/var/www/html/onemic/about-alt2.html",
+		"/home/alexare/Downloads/admin_rharvest.sql",
+		"/home/alexare/Downloads/212.24.96.133.sql",
+		"/var/www/html/fbcapital/wp-content/themes/biko/plugins/revslider/revslider.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/theme-options/theme.options.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/content-excerpt.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/content-chess.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/header.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/footer.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/style.css",
+		"/var/www/html/fbcapital/wp-content/themes/biko/changelog.txt",
+		"/var/www/html/fbcapital/wp-content/themes/biko/blog.php",
+		"/var/www/html/fbcapital/wp-content/themes/biko/404.php",
+		"/var/www/html/grav/user/themes/clean-blog/css/clean-blog.css",
+		"/var/www/html/grav/user/themes/clean-blog/templates/default.html.twig",
+		"/var/www/html/grav/user/themes/clean-blog/templates/blog.html.twig",
+		"/home/alexare/Documents/FBC/fbcapital-db_2017-07-03.sql",
+		"/var/www/html/add/footer.php",
+		"/var/www/html/add/css/style.css",
+		"/var/www/html/add/hotel.html",
+		"/var/www/html/add/css/app.css",
+		"/var/www/html/add/scrape.php",
+		"/var/www/html/add/header.php",
+		"/var/www/html/add/index.php",
+		"/var/www/html/add/search.php",
+		"/var/www/html/surl/.htaccess",
+		"/var/www/html/add/all.php",
+		"/var/www/html/add/.htaccess",
+		"/var/www/html/add/index.html",
+		"/var/www/html/add/page.html",
+		"/var/www/html/add/single.html",
+		"/var/www/html/add/js/app.js",
+		"/home/alexare/Documents/Foundation CSS/zurb-foundation-templates-master/projects/show.html",
+		"/var/www/html/add/css/foundation.css",
+		"/home/alexare/Documents/Foundation CSS/zurb-foundation-templates-master/Members/index.html",
+		"/var/www/html/add/test.html",
+		"/home/alexare/Documents/Foundation CSS/people-you-might-know/people-you-might-know.html",
+		"/home/alexare/Documents/Foundation CSS/article-row-section/article-row-section.html",
+		"/home/alexare/Documents/Foundation CSS/people-you-might-know/layout.html",
+		"/home/alexare/Documents/Foundation CSS/people-you-might-know/people-you-might-know.scss",
+		"/home/alexare/Documents/Foundation CSS/travel-feature-card/layout.html",
+		"/home/alexare/Documents/Foundation CSS/travel-feature-card/travel-feature-card.html",
+		"/var/www/html/add/htaccess.md",
+		"/var/www/html/add/add_url.php",
+		"/var/www/html/add/add-url.php",
+		"/var/www/html/add/ban-ip.php",
+		"/var/www/html/add/inc/config.php",
+		"/var/www/html/add/addurl.sql",
+		"/home/alexare/Documents/html/44-coming-soon/fund247.org/index.html",
+		"/home/alexare/Documents/html/44-coming-soon/fund247.org/assets/js/jquery.backstretch.min.js",
+		"/home/alexare/Documents/html/44-coming-soon/fund247.org/assets/css/style.css"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"float",
+			">\n",
+			"<div class=\"col-lg-4 paragraph\">\n\t\t\t<p><span class=\"beef\">Beef</span>Two plus two is four, minus one that's three, quick maths, Everyday man's on the block, smoke trees See your girl in the park, that girl is a uckers When the ting went quack-quack-quack, you man were ducking</p>\n\t\t</div>",
+			"html/",
+			"css",
+			"@media",
+			"10",
+			"100",
+			"file",
+			"img",
+			"image",
+			"images",
+			"file",
+			"inputName1",
+			"proof",
+			"file",
+			"#",
+			"#f",
+			"accessToken",
+			"Theme",
+			"token",
+			"Boing",
+			"font-family",
+			"#112E48",
+			"#F3860C",
+			"assets/",
+			"assets/assets/",
+			"assets/assets/ebsite",
+			"ebsite",
+			"website/images",
+			"public/images",
+			"Truly simple payments",
+			"Paystack",
+			"Paystack - Truly Simple Payments",
+			"instafeed",
+			"infinyteam",
+			"infinyteam\n",
+			"password",
+			"stmt",
+			"\npassword_hash",
+			"password_hash",
+			"password",
+			"login",
+			"http://localhost/fbcapital",
+			"http://firstbullioncapital.com",
+			"http://",
+			"http://localhost/fbcapital",
+			"SPRINGFUNDS",
+			"SPRING FUNDS",
+			"rharvest.org",
+			"localhost/fbcapital",
+			"graphik",
+			"caveat",
+			"#393939",
+			"#176FA9",
+			"#eee",
+			"#000099",
+			"$black",
+			"$dark-gray",
+			"$primary-color",
+			"$white",
+			"$medium-gray",
+			"#e6e6e6",
+			"JIVOFUNDS"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"Graphik",
+			"#2C131F",
+			"#000000",
+			"assets/website/",
+			"assets/ebsite/images",
+			"website/images",
+			"Uneding Cash Flow",
+			"Vintage Earners",
+			"Vintage Earners - Unending Cash Flow",
+			"https://firstbullioncapital.com",
+			"IDC OFFICE",
+			"185.69.54.75/rhf",
+			"212.24.96.133",
+			"#ce0101",
+			"#fff",
+			"#333",
+			"#000",
+			"#333",
+			"#f2f3f3",
+			"#fff",
+			"#e6e6e6",
+			"SUWADEE"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/html/passive/coursera/assignments/assignment2/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								634,
+								634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/alexare/Documents/andrew/document/html/magicfm-server-invoice.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14877,
+								14877
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/var/www/html/io.perch/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15977,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15189,
+								15189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6766.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/var/www/html/passive/coursera/assignments/assignment2/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1789,
+								1789
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1734.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/var/www/html/passive/coursera/examples/Lecture24/responsive-after.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1644,
+								1644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1785.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 27.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "coursera-module.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
