@@ -1,6 +1,6 @@
 # passive
 
-Documenting my learning journey 
+Documenting my learning/reading journey 
 
 ### Todo 
 - [ ] Eloquent Javascript

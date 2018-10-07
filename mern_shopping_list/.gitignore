@@ -1,2 +1,2 @@
-# eclude node modules
+# dont track node modules 
 /node_modules
