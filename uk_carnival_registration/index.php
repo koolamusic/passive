@@ -28,14 +28,17 @@ Optionally Set Window Location to new website link below </body Tag>
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name           = stripslashes(trim($_POST['form-name']));
-    $nationality    = stripslashes(trim($_POST['form-email']));
-    $phone          = stripslashes(trim($_POST['form-name']));
+    $nationality    = stripslashes(trim($_POST['form-nationality']));
+    $state          = stripslashes(trim($_POST['form-state']));
+    $DOB            = stripslashes(trim($_POST['form-DOB']));
+    $permaddress    = stripslashes(trim($_POST['form-permaddress']));
+    $curraddress    = stripslashes(trim($_POST['form-curraddress']));
+    $email          = stripslashes(trim($_POST['form-email']));   
+    $facebook       = stripslashes(trim($_POST['form-facebook']));
+    $instagram      = stripslashes(trim($_POST['form-instagram']));
+    $phone          = stripslashes(trim($_POST['form-phone']));
+    $message        = stripslashes(trim($_POST['form-message']));
     $subject        = stripslashes(trim($_POST['form-name']));
-    $message        = stripslashes(trim($_POST['form-name']));
-    $email          = stripslashes(trim($_POST['form-email']));
-    $phone          = stripslashes(trim($_POST['form-name']));
-    $subject        = stripslashes(trim($_POST['form-name']));
-    $message        = stripslashes(trim($_POST['form-name']));
     $pattern        = '/[\r\n]|Content-Type:|Bcc:|Cc:/i';
 
     if (preg_match($pattern, $name) || preg_match($pattern, $email) || preg_match($pattern, $subject)) {
@@ -45,8 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     $emailIsValid = filter_var($email, FILTER_VALIDATE_EMAIL);
-
-    if ($name && $email && $emailIsValid && $subject && $message) {
+    
+    // Check For Required Fields, Validate Input then Construct new Mail Instance
+    if ($name && $email && $emailIsValid && $phone && $subject && $message) {
         $mail = new SimpleMail();
 
         $mail->setTo($config->get('emails.to'));
@@ -63,10 +67,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </head>
             <body>
                 <h1>{$subject}</h1>
-                <p><strong>{$config->get('fields.email')}:</strong> {$email}</p>
+                
                 <p><strong>{$config->get('fields.name')}:</strong> {$name}</p>
+                <p><strong>{$config->get('fields.nationality')}:</strong> {$nationality}</p>
+                <p><strong>{$config->get('fields.state')}:</strong> {$state}</p>
+                <p><strong>{$config->get('fields.DOB')}:</strong> {$DOB}</p>
+                <p><strong>{$config->get('fields.permaddress')}:</strong> {$permaddress}</p>
+                <p><strong>{$config->get('fields.curraddress')}:</strong> {$curraddress}</p>
+                <p><strong>{$config->get('fields.email')}:</strong> {$email}</p>
+                <p><strong>{$config->get('fields.facebook')}:</strong> {$facebook}</p>   
+                <p><strong>{$config->get('fields.instagram')}:</strong> {$instagram}</p>
                 <p><strong>{$config->get('fields.phone')}:</strong> {$phone}</p>
                 <p><strong>{$config->get('fields.message')}:</strong> {$message}</p>
+                <p><strong>{$config->get('fields.subject')}:</strong> {$subject}</p>
             </body>
         </html>";
 
@@ -208,7 +221,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if(!empty($emailSent)): ?>
             <div class="col-md-6 col-md-offset-3">
                 <div class="alert alert-success text-center"><?php echo $config->get('messages.success'); ?></div>
-                <a href="http://ukwacarnival.com"><button class="btn btn-large btn-block btn-info">Visit Homepage</button></a>
+                <a href="http://ukwacarnival.com"><button class="btn btn-large btn-block btn-info">Visit Homepage</button></a> 
+                <a href="http://ukwacarnival.com/online-form"><button class="btn btn-large btn-block btn-info">Register Again</button></a>
             </div>
         <?php else: ?>
             <?php if(!empty($hasError)): ?>
@@ -228,17 +242,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="col-md-6 col-md-offset-2" style="margin-top:40px;">
         
         
-        <form action="/client/index.php/" enctype="application/x-www-form-urlencoded" id="registration-form" class="form-vertical" method="post">
+        <form action="/online-form/index.php/" enctype="application/x-www-form-urlencoded" id="registration-form" class="form-vertical" method="post">
       
-          <div class="form-group col-12">
-              <label for="form-email" class="control-label"><?php echo $config->get('fields.email'); ?></label>
-                  <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
-              </div>
 
             <div class="form-group col-12">
-                <label for="form-name" class="control-label"><?php echo $config->get('fields.name'); ?></label>
-                    <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
-                </div>
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.name'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>                     
+            
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.nationality'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>              
+            
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.state'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>        
+            
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.DOB'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>   
+            
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.permaddress'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>      
+            
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.curraddress'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div> 
+            
+            <div class="form-group col-12">
+              <label for="form-email" class="control-label"><?php echo $config->get('fields.email'); ?></label>
+                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
+            </div>
+
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.facebook'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>   
+            
+            
+            <div class="form-group col-12">
+              <label for="form-email" class="control-label"><?php echo $config->get('fields.instagram'); ?></label>
+                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
+            </div>
+
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.phone'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>
+            
+            <div class="form-group col-12">
+              <label for="form-name" class="control-label"><?php echo $config->get('fields.message'); ?></label>
+                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+            </div>
 
 
 
