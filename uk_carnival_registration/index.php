@@ -109,7 +109,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!--Require Bootstrap | FontAwesome | Template.css from SPBuilder For Header and Form Styling-->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="http://ukwacarnival.com/templates/ts_eventor/css/template.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="public/css/client.css"> USE FOR CUSTOM STYLING-->
 </head>
 
@@ -123,7 +124,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div id="sp-logo" class="col-xs-5 col-sm-4 col-md-3">
                             <div class="sp-column ">
                                 <div class="logo">
-                                    <a href="index.php"><img class="sp-default-logo hidden-xs" src="http://ukwacarnival.com/images/ukwalogo.png" alt="Ukwa Carnival 2018 | Ukwa Royal Heritage"><img class="sp-retina-logo hidden-xs" src="http://ukwacarnival.com/images/ukwalogo.png" alt="Ukwa Carnival 2018 | Ukwa Royal Heritage" width="205" height="66"><img class="sp-default-logo visible-xs" src="http://ukwacarnival.com/images/ukwalogo.png" alt="Ukwa Carnival 2018 | Ukwa Royal Heritage"></a>
+                                    <a href="index.php"><img class="sp-default-logo hidden-xs" 
+src="http://ukwacarnival.com/images/ukwalogo.png" alt="Ukwa Carnival 2018 | Ukwa Royal Heritage"><img class="sp-retina-logo hidden-xs" 
+src="http://ukwacarnival.com/images/ukwalogo.png" alt="Ukwa Carnival 2018 | Ukwa Royal Heritage" width="205" height="66"><img 
+class="sp-default-logo visible-xs" src="http://ukwacarnival.com/images/ukwalogo.png" alt="Ukwa Carnival 2018 | Ukwa Royal Heritage"></a>
                                 </div>
                             </div>
                         </div>
@@ -138,8 +142,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
                       
-                        <li class="sp-menu-item"><a href="about.php?pg=2">2018 Edition</a></li>
-                        <li class="sp-menu-item"><a href="sponsors.php?pg=2">Sponsors</a></li>
+                        <li class="sp-menu-item"><a href="../about.php?pg=2">2018 Edition</a></li>
+                        <li class="sp-menu-item"><a href="../sponsors.php?pg=2">Sponsors</a></li>
                        
         
         <li class="sp-menu-item"><a href="contact-us.php?pg=2">Contact Us</a></li>
@@ -151,9 +155,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 210px;">
                 <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
-                        <li class="sp-menu-item"><a href="forms.php?pg=3">Forms</a></li>
-                        <li class="sp-menu-item"><a href="bands.php?pg=3">Bands</a></li>
-                        <li class="sp-menu-item"><a href="parade-safety-rules.php?pg=3">Parade Safety Rules</a></li>
+                        <li class="sp-menu-item"><a href="../forms.php?pg=3">Forms</a></li>
+                        <li class="sp-menu-item"><a href="../bands.php?pg=3">Bands</a></li>
+                        <li class="sp-menu-item"><a href="../parade-safety-rules.php?pg=3">Parade Safety Rules</a></li>
                     </ul>
                 </div>
             </div>
@@ -162,8 +166,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 210px;">
                 <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
-                        <li class="sp-menu-item"><a href="press.html">Press Releases</a></li>
-                        <li class="sp-menu-item"><a href="general-information.php">General Information</a></li>
+                        <li class="sp-menu-item"><a href="../press.html">Press Releases</a></li>
+                        <li class="sp-menu-item"><a href="../general-information.php">General Information</a></li>
                     </ul>
                 </div>
             </div>
@@ -172,13 +176,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 210px;">
                 <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
-                        <li class="sp-menu-item"><a href="photos.php">Photos</a></li>
-                        <li class="sp-menu-item"><a href="videos.php">Videos</a></li>
+                        <li class="sp-menu-item"><a href="../photos.php">Photos</a></li>
+                        <li class="sp-menu-item"><a href="../videos.php">Videos</a></li>
                     </ul>
                 </div>
             </div>
         </li>
-        <li class="sp-menu-item sp-has-child"><a href="events.php">Events</a>
+        <li class="sp-menu-item sp-has-child"><a href="../events.php">Events</a>
             <!-- <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 210px;">
                 <div class="sp-dropdown-inner">
                     <ul class="sp-dropdown-items">
@@ -221,8 +225,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if(!empty($emailSent)): ?>
             <div class="col-md-6 col-md-offset-3">
                 <div class="alert alert-success text-center"><?php echo $config->get('messages.success'); ?></div>
-                <a href="http://ukwacarnival.com"><button class="btn btn-large btn-block btn-info">Visit Homepage</button></a> 
-                <a href="http://ukwacarnival.com/online-form"><button class="btn btn-large btn-block btn-info">Register Again</button></a>
+                <a href="http://ukwacarnival.com"><button class="text-center btn btn-large btn-info">Visit Homepage</button></a> 
+                <a href="http://ukwacarnival.com/online-form"><button class="text-center btn btn-large btn-success">Register 
+Again</button></a>
             </div>
         <?php else: ?>
             <?php if(!empty($hasError)): ?>
@@ -242,63 +247,75 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="col-md-6 col-md-offset-2" style="margin-top:40px;">
         
         
-        <form action="/online-form/index.php/" enctype="application/x-www-form-urlencoded" id="registration-form" class="form-vertical" method="post">
+        <form action="/online-form/index.php/" enctype="application/x-www-form-urlencoded" id="registration-form" class="form-vertical" 
+method="post">
       
 
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.name'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); 
+?>" required>
             </div>                     
             
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.nationality'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-nationality" name="form-nationality" placeholder="<?php echo 
+$config->get('fields.nationality'); ?>" required>
             </div>              
             
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.state'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-state" name="form-state" placeholder="<?php echo 
+$config->get('fields.state'); ?>" required>
             </div>        
             
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.DOB'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="date" class="form-control" id="form-DOB" name="form-DOB" placeholder="<?php echo $config->get('fields.DOB'); ?>" 
+required>
             </div>   
             
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.permaddress'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-permaddress" name="form-permaddress" placeholder="<?php echo 
+$config->get('fields.permaddress'); ?>" required>
             </div>      
             
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.curraddress'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-curraddress" name="form-curraddress" placeholder="<?php echo 
+$config->get('fields.curraddress'); ?>" required>
             </div> 
             
             <div class="form-group col-12">
               <label for="form-email" class="control-label"><?php echo $config->get('fields.email'); ?></label>
-                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
+                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo 
+$config->get('fields.email'); ?>" required>
             </div>
 
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.facebook'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-facebook" name="form-facebook" placeholder="<?php echo 
+$config->get('fields.facebook'); ?>" required>
             </div>   
             
             
             <div class="form-group col-12">
               <label for="form-email" class="control-label"><?php echo $config->get('fields.instagram'); ?></label>
-                <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
+                <input type="text" class="form-control" id="form-instagram" name="form-instagram" placeholder="<?php echo 
+$config->get('fields.instagram'); ?>" required>
             </div>
 
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.phone'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="text" class="form-control" id="form-phone" name="form-phone" placeholder="<?php echo 
+$config->get('fields.phone'); ?>" required>
             </div>
             
             <div class="form-group col-12">
               <label for="form-name" class="control-label"><?php echo $config->get('fields.message'); ?></label>
-                <input type="password" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                <input type="textarea" class="form-control" id="form-message" name="form-message" placeholder="<?php echo 
+$config->get('fields.message'); ?>" required>
             </div>
 
 
@@ -354,3 +371,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </script>
 </body>
 </html>
+
