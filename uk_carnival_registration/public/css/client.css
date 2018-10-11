@@ -1,0 +1,38 @@
+/* Client Login Section */
+ .wrapper{
+	 height: 100%;
+	 background: url('../../../images/header/1.jpg') center center fixed;
+   margin-bottom: 100px;
+   color: #fff;
+ }
+
+ .wrapper-content{
+   margin-top: 100px;
+ }
+
+ .wrapper-content .form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 8px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #eee;
+    border-radius: 0px;
+  }
+
+.wrapper-content img{
+  display: inline;
+  margin: 0 auto;
+}
+
+.wrapper-content.btn-success {
+    color: #fff;
+    background-color: #ea1b1b;
+    border-color: #982d21;
+    height: 50px;
+    width: 100%;
+}
