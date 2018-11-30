@@ -1,2 +1,3 @@
-# dont track node modules 
+# dont track node modules and package-lock
 /node_modules
+/package-lock.json
