@@ -37,6 +37,28 @@ N/B: A single `let` statement may define multiple bindings, but should be sepera
 Example `let male = 'bolu', female = 'ada';`
 
 
+Rules of bindings
+Binding names can be any word, and use any digit, but must not start with a `digit`, underscore `_` `₦` symbol.
+There are reserved words in javascript, and future versions that cannot be used as binding(variable names)
+```
+break case catch class const continue debugger default
+delete do else enum export extends false finally for
+function if implements import interface in instanceof let
+new package private protected public return static super
+switch this throw true try typeof var void while with yield
+```
+
+// Functions
+- Executing a function is called `invokind, calling or applying it` 
+- Values given to functions are called arguments
+- console.log() is a function, we can access functions by calling their binding name with a parenthesis, while passing in our 
+arguments for the function, one special case in the function `console.log` is that console is a binding, and `log()` is an 
+expression that retrieves the log property from the value held by the `console` binding.
+- Functions can be used within larger expressions `(Math.max(2,3) + 100)` here `Math.max()` is a part of a larger expression
+- Javascript(ES6) has some inbuilt functions that can take the place of regular hacks used when working with other JS 
+functions
+
+
 
 
 
