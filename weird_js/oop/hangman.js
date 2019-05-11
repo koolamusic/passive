@@ -60,48 +60,62 @@
 
 // Switching to Javascript Class Syntax
 class Hangman {
-    constructor(word, guess) {
+    constructor(word, remainingGuesses) {
         this.word = word.toLowerCase().split('')
-        this.guess = guess
+        this.remainingGuesses = remainingGuesses
         this.guessedLetters = []
         this.status = 'playing'
     }
-    
-     getPuzzle() {
-        console.log(this.word)
+    calculateStatus() {
+        const finished = this.word.every((letter) => this.guessedLetters.includes(letter))
+
+        if (this.remainingGuesses === 0) {
+            this.status = 'failed'
+        } else if (finished) {
+            this.status = 'finished'
+        } else {
+            this.status = 'playing'
+        }
+    }
+    get statusMessage() {
+        if (this.status === 'playing') {
+            return `Guesses left: ${this.remainingGuesses}`
+        } else if (this.status === 'failed') {
+            return `Nice try! The word was "${this.word.join('')}".`
+        } else {
+            return 'Great work! You guessed the work.'
+        }
+    }
+    get puzzle() {
         let puzzle = ''
-        this.word.forEach((word )=> {
-            if (this.guessedLetters.includes(word) || word === ' ') {
-                puzzle += word
+
+        this.word.forEach((letter) => {
+            if (this.guessedLetters.includes(letter) || letter === ' ') {
+                puzzle += letter
             } else {
                 puzzle += '*'
             }
-        });
+        })
+
         return puzzle
     }
+    makeGuess(guess) {
+        guess = guess.toLowerCase()
+        const isUnique = !this.guessedLetters.includes(guess)
+        const isBadGuess = !this.word.includes(guess)
 
-     makeGuess(guess) {
-        const value = guess.toLowerCase()
-        const isUnique = !this.guessedLetters.includes(value)
-        const isBadGuess = !this.word.includes(value)
-    
-        isUnique ? this.guessedLetters.push(value) : null;
-        isUnique && isBadGuess ? this.guess-- : this.guess
-    }
-
-     calculateStatus () {
-        console.log(this.guessedLetters)
-        const finished = this.word.every((word) => this.guessedLetters.includes(word))
-        if (this.guess === 0) {
-           return this.status = 'FAILED ~!!!!'
-        } else if (finished) {
-            return this.status = 'finished'
-        } else {
-           return this.status = '!PLAYING'
+        if (this.status !== 'playing') {
+            return
         }
-        
+
+        if (isUnique) {
+            this.guessedLetters.push(guess)
+        }
+
+        if (isUnique && isBadGuess) {
+            this.remainingGuesses--
+        }
+
+        this.calculateStatus()
     }
 }
-
-let wish = new Hangman('e', 2)
-console.log('rrrr',wish)

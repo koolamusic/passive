@@ -1,31 +1,23 @@
 
-const gameOne = new Hangman('Food Haven', 2 )
-const gameTwo = new Hangman('Eat', 2 )
+// const gameOne = new Hangman('Food Haven', 2 )
+// const gameTwo = new Hangman('Eat', 2 )
  
 
-console.log(gameOne)
-// gameOne.makeGuess(guess)
-console.log("Puzzle I--->",gameOne.getPuzzle())
-
-console.log(gameTwo)
-console.log("Puzzle II--->",gameTwo.getPuzzle())
+// console.log("Puzzle I--->",gameOne.puzzle)
+// console.log("Puzzle II--->",gameTwo.puzzle)
 
 
 
+const puzzleEl = document.querySelector('#puzzle')
+const guessesEl = document.querySelector('#guessRemaining')
+const game1 = new Hangman('Food', 2)
 
-const guessEl = document.getElementById('guessRemaining')
-const textHolder = document.querySelector('#puzzle')
+puzzleEl.textContent = game1.puzzle
+guessesEl.textContent = game1.statusMessage
 
-
-// Initialize variables in DOM
-textHolder.textContent = (gameOne.getPuzzle())
-guessEl.textContent = gameOne.guess
-
-window.addEventListener('keypress', (e) => {
-    const guess = e.key
-    gameOne.makeGuess(guess)
-    gameOne.calculateStatus()
-    textHolder.textContent = (gameOne.getPuzzle())
-    guessEl.textContent = gameOne.guess 
-    console.log(gameOne.status)
+window.addEventListener('keypress', function (e) {
+    const guess = String.fromCharCode(e.charCode)
+    game1.makeGuess(guess)
+    puzzleEl.textContent = game1.puzzle
+    guessesEl.textContent = game1.statusMessage
 })
