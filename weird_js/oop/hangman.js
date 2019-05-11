@@ -9,49 +9,51 @@
 
 
 
-const Hangman = function (word, remainingGuess) {
+const Hangman = function (word, guess) {
     this.word = word.toLowerCase().split('')
-    this.guess = remainingGuess
-    this.guessedLetters = ['o', 'e']
-    this.correct = this.challenge === word
-
+    this.guess = guess
+    this.guessedLetters = []
 }
 
 // Create Get Puzzles prototype
 Hangman.prototype.getPuzzle = function () {
     console.log(this.word)
-    const blob = '*';
-    result = new String
-    this.word.forEach(word => {
-        if (this.guessedLetters.indexOf(word) != -1 || word === ' ') {
-            result+=word
+    let puzzle = ''
+    this.word.forEach((word )=> {
+        if (this.guessedLetters.includes(word) || word === ' ') {
+            puzzle += word
+        } else {
+            puzzle += '*'
         }
-        result+=blob
     });
-    return result
+    return puzzle
+}
+
+// Create prototype method to manage user guesses for the  hangman game
+Hangman.prototype.makeGuess = function (guess) {
+    value = guess.toLowerCase()
+    const isUnique = !this.guessedLetters.includes(value)
+    const isBadGuess = !this.word.includes(value)
+
+    isUnique ? this.guessedLetters.push(value) : null;
+    isUnique && isBadGuess ? this.guess-- : this.guess
 }
 
 
 const gameOne = new Hangman('Food Haven', 2 )
 const gameTwo = new Hangman('Eat', 2 )
 
+
 console.log(gameOne)
-console.log(gameTwo)
-
 console.log(gameOne.getPuzzle())
-console.log("HERE IS", gameTwo.getPuzzle())
+
+console.log(gameTwo)
+console.log(gameTwo.getPuzzle())
 
 
-
-// Hangman.prototype.setGuess = function (word) {
-//     return this.guess = word !== this.challenge ? this.guess - 1 : this.guess
-// }
-
-
-// const gameOne = new Hangman('coundtry')
-// gameOne.setGuess('coundtry')
-// const gameTne = new Hangman('counfdtry')
-
-
-// console.log(gameOne)
-// console.log(gameTne)
+window.addEventListener('keypress', (e) => {
+    const guess = e.key
+    console.log(gameOne.makeGuess(guess))
+    console.log(gameOne)
+console.log(gameOne.getPuzzle())
+})
