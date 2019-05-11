@@ -102,3 +102,6 @@ class Hangman {
         
     }
 }
+
+let wish = new Hangman('e', 2)
+console.log('rrrr',wish)
