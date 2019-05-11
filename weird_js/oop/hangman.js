@@ -13,6 +13,7 @@ const Hangman = function (word, guess) {
     this.word = word.toLowerCase().split('')
     this.guess = guess
     this.guessedLetters = []
+    this.status = 'playing'
 }
 
 // Create Get Puzzles prototype
@@ -39,16 +40,19 @@ Hangman.prototype.makeGuess = function (guess) {
     isUnique && isBadGuess ? this.guess-- : this.guess
 }
 
+// Prototype to define the state of the game as Finished | Failed || Playing
+Hangman.prototype.calculateStatus = function () {
+    const finished = this.word.every((word) => this.guessedLetters.includes(word))
+    if (this.guess === 0) {
+        this.status = 'FAILED ~!!!!'
+    } else if (finished) {
+        this.status = 'finished'
+    } else {
+        this.status = '!PLAYING'
+    }
+    
+}
 
-const gameOne = new Hangman('Food Haven', 2 )
-const gameTwo = new Hangman('Eat', 2 )
- 
-
-console.log(gameOne)
-console.log(gameOne.getPuzzle())
-
-console.log(gameTwo)
-console.log(gameTwo.getPuzzle())
 
 
 
