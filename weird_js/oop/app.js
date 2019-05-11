@@ -4,6 +4,7 @@ const gameTwo = new Hangman('Eat', 2 )
  
 
 console.log(gameOne)
+// gameOne.makeGuess(guess)
 console.log("Puzzle I--->",gameOne.getPuzzle())
 
 console.log(gameTwo)
@@ -23,6 +24,7 @@ guessEl.textContent = gameOne.guess
 window.addEventListener('keypress', (e) => {
     const guess = e.key
     gameOne.makeGuess(guess)
+    gameOne.calculateStatus()
     textHolder.textContent = (gameOne.getPuzzle())
     guessEl.textContent = gameOne.guess 
     console.log(gameOne.status)
