@@ -42,7 +42,7 @@ Hangman.prototype.makeGuess = function (guess) {
 
 const gameOne = new Hangman('Food Haven', 2 )
 const gameTwo = new Hangman('Eat', 2 )
-
+ 
 
 console.log(gameOne)
 console.log(gameOne.getPuzzle())
@@ -51,9 +51,4 @@ console.log(gameTwo)
 console.log(gameTwo.getPuzzle())
 
 
-window.addEventListener('keypress', (e) => {
-    const guess = e.key
-    console.log(gameOne.makeGuess(guess))
-    console.log(gameOne)
-console.log(gameOne.getPuzzle())
-})
+
