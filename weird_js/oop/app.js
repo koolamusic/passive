@@ -10,7 +10,7 @@
 
 const puzzleEl = document.querySelector('#puzzle')
 const guessesEl = document.querySelector('#guessRemaining')
-const game1 = new Hangman('Food', 2)
+const game1 = new Hangman('Food Haven', 2)
 
 puzzleEl.textContent = game1.puzzle
 guessesEl.textContent = game1.statusMessage

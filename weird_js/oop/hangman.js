@@ -67,7 +67,8 @@ class Hangman {
         this.status = 'playing'
     }
     calculateStatus() {
-        const finished = this.word.every((letter) => this.guessedLetters.includes(letter))
+        // Fixing an edge case where there is no match if the word has spaces within it
+        const finished = this.word.every((letter) => this.guessedLetters.includes(letter) || letter === ' ')
 
         if (this.remainingGuesses === 0) {
             this.status = 'failed'
@@ -83,7 +84,7 @@ class Hangman {
         } else if (this.status === 'failed') {
             return `Nice try! The word was "${this.word.join('')}".`
         } else {
-            return 'Great work! You guessed the work.'
+            return 'Great work! You guessed the word.'
         }
     }
     get puzzle() {
